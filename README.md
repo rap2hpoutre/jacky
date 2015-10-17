@@ -1,4 +1,4 @@
-# Laravel JSON API Client
+# Laravel JSON HTTP API Client
 
 ## Install
 
