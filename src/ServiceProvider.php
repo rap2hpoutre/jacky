@@ -1,9 +1,9 @@
 <?php
 namespace Rap2hpoutre\HttpClient;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class DummyClass extends ServiceProvider
+class ServiceProvider extends BaseServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -12,7 +12,9 @@ class DummyClass extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes(array(
+            __DIR__ . '/../../config/config.php' => config_path('http-client.php')
+        ));
     }
 
     /**
