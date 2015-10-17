@@ -1,0 +1,22 @@
+{
+    "name": "rap2hpoutre/laravel-http-client",
+    "description": "Opinionated REST JSON HTTP API client for laravel",
+    "license": "MIT",
+    "keywords": ["rest", "api", "json", "laravel"],
+    "authors": [
+        {
+            "name": "rap2hpoutre",
+            "email": "raphael@ornikar.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Rap2hpoutre\\HttpClient\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
