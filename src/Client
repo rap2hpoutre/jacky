@@ -3,4 +3,11 @@
 class Client 
 {
 
+    private function request($method, $server, $path)
+    {
+        $client = new \GuzzleHttp\Client();
+        $res = $client->request($method, $server . '/' . $path, $params);
+    
+    }
+
 }
