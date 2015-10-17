@@ -1,6 +1,6 @@
 <?php namespace Rap2hpoutre\HttpClient;
 
-class Client {
-
+class Client 
+{
 
 }
