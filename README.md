@@ -17,7 +17,7 @@ Then add the facade in `aliases` section
 ```
 
 Publish configuration in order to use Slack alerts
-```php
+```
 php artisan vendor:publish
 ```
 
@@ -36,8 +36,7 @@ Let's say foo API returns this on `GET /users/1`:
 
 You may get your user like this:
 ```php
-$user = HttpClient::get('foo-api', '/users/1')->data->first();
-echo $user->name;
+$user_name = HttpClient::get('foo-api', '/users/1')->data->first()->name;
 ```
 
 ### Not found example
