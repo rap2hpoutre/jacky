@@ -36,7 +36,7 @@ Let's say foo API returns this on `GET /users/1`:
 
 You may get your user like this:
 ```php
-$user_name = HttpClient::get('foo-api', '/users/1')->data->first()->name;
+$user_name = HttpClient::get('foo', '/users/1')->data->first()->name;
 ```
 
 ### Not found example
@@ -55,7 +55,7 @@ You may get your user like this:
 use Rap2hpoutre\HttpClient\Exception\Http404Exception;
 
 try {
-    $user = HttpClient::get('foo-api', '/users/1');
+    $user = HttpClient::get('foo', '/users/1');
 } catch (Http404Exception $e) {
     echo $e->errors->first()->title;
 }
