@@ -13,7 +13,7 @@ class ServiceProvider extends BaseServiceProvider
     public function boot()
     {
         $this->publishes(array(
-            __DIR__ . '/../../config/config.php' => config_path('http-client.php')
+            __DIR__ . '/config.php' => config_path('http-client.php')
         ));
     }
 
