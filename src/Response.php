@@ -20,4 +20,9 @@ class Response
     {
         return $this->properties->key;
     }
+    
+    public function __toString() 
+    {
+        
+    }
 }
