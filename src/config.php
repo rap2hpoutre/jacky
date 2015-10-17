@@ -13,29 +13,24 @@ return [
         'default' => [
             
             /**
-             * Base URI of the endpoint. Ex: https://api.twitter.com/1.1
+             * All request otpions sent on every http request. See more:
+             * http://docs.guzzlephp.org/en/latest/request-options.html
              */
-            'base_uri' => '',
-            
-            /**
-             * Auth method. Only basic auth is available now.
-             */
-            'auth_method' => 'basic',
-            
-            /**
-             * Auth method parameters
-             */
-            'auth' => [
+            'request_options' => [
                 
                 /**
-                 * Basic Auth parameters.
+                 * Base URI of the endpoint. Ex: https://api.twitter.com/1.1
                  */
-                'basic' => [
+                'base_uri' => '',
+                
+                /**
+                 *  Basic Auth parameters.
+                 */
+                'auth' => [
                     'username' => '',
                     'password' => '',
                 ],
-                'oauth' => [] // Not implemented yet    
-            ],
+            ]
             
             /**
              * Accessors may help you on response post process.
