@@ -39,7 +39,8 @@ return [
              * data field to collect (or any other callback function)
              */
             'accessors' => [
-                'data' => 'collect' // Callback function
+                'data' => 'collect', // Callback function
+                'errors' => 'collect'
             ]
         ]
     ],
