@@ -1,5 +1,5 @@
-# Hjac
-Heroic Json API Client for Laravel
+# HJAC
+HTTP JSON API Client for Laravel
 ## Install
 
 Install via composer
