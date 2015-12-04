@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rap2hpoutre\\HttpClient\\": "src/"
+            "Rap2hpoutre\\Jacky\\": "src/"
         }
     },
     "minimum-stability": "stable"
