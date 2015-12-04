@@ -1,5 +1,5 @@
 # Jacky
-JSON API Client for Laravel
+JSON API Client for Laravel.
 ## Install
 
 Install via composer
@@ -11,12 +11,12 @@ Add Service Provider to `config/app.php` in `providers` section
 Rap2hpoutre\Jacky\ServiceProvider::class,
 ```
 
-Then add the facade in `aliases` section
+Then add the facade in `aliases` section (optional) 
 ```php
 'Jacky' => Rap2hpoutre\Jacky\Facade::class,
 ```
 
-Publish configuration in order to use Slack alerts
+Publish configuration
 ```
 php artisan vendor:publish
 ```
@@ -34,13 +34,13 @@ Let's say foo API returns this on `GET /users/1`:
 }
 ```
 
-You may get your user like this:
+You may get the user like this:
 ```php
 $user_name = Jacky::get('foo', '/users/1')->data->first()->name;
 ```
 
 ### Not found example
-And it returns this on `GET /users/2` not found: 
+Let's say foo API returns this on `GET /users/2` not found: 
 ```json
 {
   "errors": [{
@@ -50,7 +50,7 @@ And it returns this on `GET /users/2` not found:
 }
 ```
 
-You may get your user like this:
+You may display error title like this:
 ```php
 use Rap2hpoutre\Jacky\Exception\Http404Exception;
 
@@ -61,3 +61,6 @@ try {
 }
 
 ```
+
+## Configuration
+TODO
