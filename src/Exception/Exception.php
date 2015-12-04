@@ -1,13 +1,12 @@
 <?php
-namespace Rap2hpoutre\HttpClient\Exception;
+namespace Rap2hpoutre\Jacky\Exception;
 class Exception extends \RuntimeException 
 {
 
     protected $response;
 
-    public function __construct($response, $code, \Exception $previous = null)
+    public function __construct($response, $code, $message = 'No message.', \Exception $previous = null)
     {
-        $message = (string)$response;
         $this->response = $response;
         parent::__construct($message, $code, $previous);
     }

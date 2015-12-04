@@ -2,7 +2,7 @@
 
 namespace Rap2hpoutre\Jacky\Exception;
 
-class ClientException extends Exception 
+class ServerException extends Exception
 {
 
 }

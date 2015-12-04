@@ -27,10 +27,16 @@ return [
                  *  Basic Auth parameters.
                  */
                 'auth' => [
-                    'username' => '',
-                    'password' => '',
+                    /**
+                     * User name
+                     */
+                    '',
+                    /**
+                     * Password
+                     */
+                    '',
                 ],
-            ]
+            ],
             
             /**
              * Accessors may help you on response post process.

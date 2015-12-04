@@ -1,5 +1,5 @@
 <?php
-namespace Rap2hpoutre\HttpClient;
+namespace Rap2hpoutre\Jacky;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
@@ -13,7 +13,7 @@ class ServiceProvider extends BaseServiceProvider
     public function boot()
     {
         $this->publishes(array(
-            __DIR__ . '/config.php' => config_path('http-client.php')
+            __DIR__ . '/config.php' => app()->basePath() . '/config/jacky.php'
         ));
     }
 
@@ -24,8 +24,8 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('http-client', function ($app) {
+        $this->app->singleton('jacky', function ($app) {
             return new Client;
-        }
+        });
     }
 }

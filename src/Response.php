@@ -1,13 +1,15 @@
-<?php namespace Rap2hpoutre\HttpClient;
+<?php namespace Rap2hpoutre\Jacky;
 
 class Response 
 {
 
     private $properties;
-    
+    private $body;
+
     public function __construct($body, $accessors)
     {
-        $this->properties = json_decode($body);
+        $this->body = $body;
+        $this->properties = json_decode($this->body);
         
         foreach($accessors as $key => $callback) {
             if (isset($this->properties->$key)) {
@@ -23,6 +25,6 @@ class Response
     
     public function __toString() 
     {
-        
+        return $this->body;
     }
 }
