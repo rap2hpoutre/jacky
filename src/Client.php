@@ -7,7 +7,6 @@ class Client
     {
         $client = new \GuzzleHttp\Client();
 
-        // $path = config("jacky.servers.$server.request_options") . '/' . $path;
         $params = config("jacky.servers.$server.request_options");
         if ($query) {
             $params[($method == 'POST' || $method == 'PUT' || $method == 'PATCH') ? 'form_params' : 'query'] = $query;
@@ -22,7 +21,7 @@ class Client
         
         $response = new Response(
             $guzzle_response->getBody(),
-            config("http-client.servers.$server.accessors")
+            config("jacky.servers.$server.accessors")
         );
         
         $status_code = $guzzle_response->getStatusCode();
