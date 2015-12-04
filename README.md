@@ -63,4 +63,4 @@ try {
 ```
 
 ## Configuration
-TODO
+You can learn more about configuration [here](https://github.com/rap2hpoutre/jacky/blob/master/src/config.php)
