@@ -1,8 +1,8 @@
 {
-    "name": "rap2hpoutre/laravel-http-client",
+    "name": "rap2hpoutre/jacky",
     "description": "Opinionated REST JSON HTTP API client for laravel",
     "license": "MIT",
-    "keywords": ["rest", "api", "json", "laravel"],
+    "keywords": ["rest", "api", "json", "laravel", "http", "jacky"],
     "authors": [
         {
             "name": "rap2hpoutre",
