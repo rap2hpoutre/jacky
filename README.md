@@ -1,5 +1,5 @@
 # Jacky
-JSON API Client for Laravel.
+JSON API Client for Laravel and Lumen
 ## Install
 
 Install via composer
