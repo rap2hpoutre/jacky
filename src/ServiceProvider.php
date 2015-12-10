@@ -24,7 +24,7 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('jacky', function ($app) {
+        $this->app->singleton('jacky', function () {
             return new Client;
         });
     }
