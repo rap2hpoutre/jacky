@@ -1,5 +1,8 @@
 # Jacky
-JSON API Client for Laravel and Lumen
+[![Packagist](https://img.shields.io/packagist/v/rap2hpoutre/jacky.svg)]()
+[![Packagist](https://img.shields.io/packagist/l/rap2hpoutre/jacky.svg)](https://packagist.org/packages/rap2hpoutre/jacky) 
+
+JSON API Client for Laravel and Lumen.
 ## Install
 
 Install via composer
