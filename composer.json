@@ -14,6 +14,9 @@
         "illuminate/support": "5.*",
         "guzzlehttp/guzzle": "^6.1"
     },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
     "autoload": {
         "psr-4": {
             "Rap2hpoutre\\Jacky\\": "src/"
