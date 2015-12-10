@@ -27,7 +27,7 @@ class Client
         $status_code = $guzzle_response->getStatusCode();
         if ($status_code >= 400 && $status_code < 500) {
             throw new Exception\ClientException($response, $status_code, $guzzle_response->getReasonPhrase());
-        } elseif ($status_code >= 400 && $status_code < 500) {
+        } elseif ($status_code >= 500 && $status_code < 600) {
             throw new Exception\ServerException($response, $status_code, $guzzle_response->getReasonPhrase());
         }
         
