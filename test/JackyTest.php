@@ -10,6 +10,6 @@ class JackyTest extends \PHPUnit_Framework_TestCase
     public function testStupid() 
     {
         // does this test works? ;)
-        $this->assert(true, true);
+        $this->assertTrue(true);
     }
 }
