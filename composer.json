@@ -2,11 +2,11 @@
     "name": "rap2hpoutre/jacky",
     "description": "Opinionated REST JSON HTTP API client for laravel",
     "license": "MIT",
-    "keywords": ["rest", "api", "json", "laravel", "http", "jacky"],
+    "keywords": ["rest", "api", "json", "laravel", "http", "jacky", "lumen"],
     "authors": [
         {
             "name": "rap2hpoutre",
-            "email": "raphael@ornikar.com"
+            "email": "raphaelht@gmail.com"
         }
     ],
     "require": {
