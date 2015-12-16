@@ -6,7 +6,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/rap2hpoutre/jacky.svg?style=flat-square)](https://scrutinizer-ci.com/g/jacky/nestor)
 
 
-JSON API Client for Laravel and Lumen. It's basically just a [Guzzle](https://github.com/guzzle/guzzle) wrapper for JSON, because Guzzle [does not care](http://stackoverflow.com/questions/30530172/guzzle-6-no-more-json-method-for-responses) about JSON anymore. And you can configure your endpoints once and for all in a [configuration file](https://github.com/rap2hpoutre/jacky/blob/master/src/config.php), could be useful if you work with different services. *Work in progress, tests coming soon.*
+JSON API Client for Laravel and Lumen. It's basically just a [Guzzle](https://github.com/guzzle/guzzle) wrapper for JSON, because Guzzle [does not care](http://stackoverflow.com/questions/30530172/guzzle-6-no-more-json-method-for-responses) about JSON anymore. And you can configure your endpoints once and for all in a [configuration file](https://github.com/rap2hpoutre/jacky/blob/master/src/config.php), could be useful if you work with different services.
 ## Install
 
 Install via composer
