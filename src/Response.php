@@ -1,29 +1,54 @@
 <?php namespace Rap2hpoutre\Jacky;
 
-class Response implements \Iterator
+use Illuminate\Contracts\Support\Arrayable;
+use Iterator;
+
+/**
+ * Class Response
+ * @package Rap2hpoutre\Jacky
+ */
+class Response implements Iterator, Arrayable
 {
 
+    /**
+     * @var mixed
+     */
     private $properties;
+    /**
+     * @var
+     */
     private $body;
 
+    /**
+     * Response constructor.
+     * @param $body
+     * @param $accessors
+     */
     public function __construct($body, $accessors)
     {
         $this->body = $body;
         $this->properties = json_decode($this->body);
-        
-        foreach($accessors as $key => $callback) {
+
+        foreach ($accessors as $key => $callback) {
             if (isset($this->properties->$key)) {
                 $this->properties->$key = call_user_func($callback, $this->properties->$key);
             }
         }
     }
-    
+
+    /**
+     * @param $key
+     * @return mixed
+     */
     public function __get($key)
     {
         return $this->properties->$key;
     }
-    
-    public function __toString() 
+
+    /**
+     * @return string
+     */
+    public function __toString()
     {
         return (string)$this->body;
     }
@@ -82,5 +107,15 @@ class Response implements \Iterator
     public function rewind()
     {
         reset($this->properties);
+    }
+
+    /**
+     * Get the instance as an array.
+     *
+     * @return array
+     */
+    public function toArray()
+    {
+        return (array)$this->properties;
     }
 }
