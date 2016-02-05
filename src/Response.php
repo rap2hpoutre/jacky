@@ -118,4 +118,14 @@ class Response implements Iterator, Arrayable
     {
         return (array)$this->properties;
     }
+
+    /**
+     * Get properties has collection.
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public function collection()
+    {
+        return collect($this->toArray());
+    }
 }
